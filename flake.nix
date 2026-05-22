@@ -1,4 +1,4 @@
-{
+{ 
   description = "Nixos hyprland";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -22,6 +22,7 @@
     nixpkgs,
     hyprland,
     home-manager,
+    elephant,
     ...
   }: {
     nixosConfigurations.mepasta = nixpkgs.lib.nixosSystem {

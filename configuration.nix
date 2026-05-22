@@ -59,19 +59,42 @@
     packages = with pkgs; [
       tree
       git
+      unzip
+      ripgrep
+
       quickshell
       kitty
-      neovim
-      ripgrep
       cliphist
       rofi
       wl-clipboard
       wtype
       nautilus
       swaybg
+
       vis
+      neovim
+      tree-sitter
+      lua
+      lua-language-server
+      stylua
+
+
+      rustup
+      rustfmt
+      clippy
+
+      gcc
+      libgcc
+      clang
+      libclang
     ];
   };
+
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+    stdenv.cc.cc.lib
+    zlib
+  ];
 
   programs.firefox.enable = true;
 
@@ -87,6 +110,7 @@
     wget
     phinger-cursors
     pavucontrol
+    lua-language-server
   ];
 
   programs.dconf.enable = true;

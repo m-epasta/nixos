@@ -1,8 +1,10 @@
-{ config, pkgs, inputs, ... }:
 {
-  imports = [inputs.walker.homeManagerModules.default];
-
-  programs.walker.enable = true;
+  config,
+  pkgs,
+  inputs,
+  ...
+}: {
+  imports = [];
 
   home.stateVersion = "26.05";
 }

@@ -5,7 +5,9 @@
   ...
 }
 : {
-  imports = [(inputs.nixpkgs + "/nixos/modules/profiles/hardened.nix")];
+  # TODO: enable securities without breaking ethernet
+
+  # imports = [(inputs.nixpkgs + "/nixos/modules/profiles/hardened.nix")];
 
   networking.hostName = "mushBoy";
 

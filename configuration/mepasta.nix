@@ -13,8 +13,8 @@
       unzip
       ripgrep
 
-      quickshell
       kitty
+      hyprpaper
       cliphist
       rofi
       wl-clipboard

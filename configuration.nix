@@ -16,6 +16,8 @@
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  # TODO: Requires test before enabling it
+  # boot.kernelPackages = pkgs.linuxPackages_hardened;
 
   # Authentification program (first GUI to load)
   services.displayManager.ly.enable = true;
@@ -33,6 +35,11 @@
     phinger-cursors
     pavucontrol
     lua-language-server
+    lynis
+    vulnix
+    # tripwire
+    # seems that tripwire is replaced by trippy
+    trippy
   ];
 
   # Do NOT change this value unless you have manually inspected all the changes it would make to your configuration,

@@ -32,6 +32,7 @@
   environment.systemPackages = with pkgs; [
     vim
     wget
+    quickshell
     phinger-cursors
     pavucontrol
     lua-language-server

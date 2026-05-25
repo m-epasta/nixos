@@ -59,6 +59,7 @@
     brotli
     unixodbc
     glib
+    libc
   ];
 
   programs.firefox.enable = true;

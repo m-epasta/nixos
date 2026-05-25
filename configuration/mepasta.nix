@@ -21,6 +21,12 @@
       wtype
       nautilus
       swaybg
+      awww
+      gnome-themes-extra
+      brightnessctl
+      fzf
+      kdePackages.qtdeclarative
+      unixodbc
 
       vis
       neovim
@@ -37,6 +43,8 @@
       libgcc
       clang
       libclang
+      gnumake
+      tinycc
 
       nixd
       alejandra
@@ -48,6 +56,9 @@
   programs.nix-ld.libraries = with pkgs; [
     stdenv.cc.cc.lib
     zlib
+    brotli
+    unixodbc
+    glib
   ];
 
   programs.firefox.enable = true;

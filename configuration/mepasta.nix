@@ -8,11 +8,19 @@
     isNormalUser = true;
     extraGroups = ["wheel"];
     packages = with pkgs; [
+      # Shell utilities
       tree
       git
       unzip
       ripgrep
+      lazygit
+      valgrind-light
+      tmux
 
+      # GUI utilities
+      btop
+
+      # Hyprland/ui
       kitty
       hyprpaper
       cliphist
@@ -26,8 +34,8 @@
       brightnessctl
       fzf
       kdePackages.qtdeclarative
-      unixodbc
 
+      # Editors & LSP
       vis
       neovim
       tree-sitter
@@ -35,20 +43,25 @@
       lua-language-server
       stylua
 
+      # Rust toolchain
       rustup
       rustfmt
       clippy
 
+      # C/C++ dev & make
       gcc
       libgcc
       clang
       libclang
       gnumake
       tinycc
+      unixodbc
 
+      # Nix/NixOS
       nixd
       alejandra
       nil
+      direnv
     ];
   };
 

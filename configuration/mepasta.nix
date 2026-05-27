@@ -20,6 +20,7 @@
       # GUI utilities
       btop
       libreoffice
+      gdbgui
 
       # Hyprland/ui
       kitty
@@ -44,6 +45,11 @@
       lua-language-server
       stylua
 
+      # Just (make alternative)
+      just
+      just-lsp
+      just-formatter
+
       # Rust toolchain
       rustup
       rustfmt
@@ -57,6 +63,7 @@
       gnumake
       tinycc
       unixodbc
+      gdb
 
       # Nix/NixOS
       nixd
@@ -74,6 +81,7 @@
     unixodbc
     glib
     libc
+    tinycc
   ];
 
   programs.firefox.enable = true;

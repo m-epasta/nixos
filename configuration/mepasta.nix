@@ -19,6 +19,7 @@
 
       # GUI utilities
       btop
+      libreoffice
 
       # Hyprland/ui
       kitty

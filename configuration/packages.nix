@@ -71,12 +71,19 @@
       alejandra
       nil
       direnv
+      statix
 
       # ASM
       fasm
 
       # V
       vlang
+
+      # Zig
+      zig
+      zig-shell-completions
+      zig-zlint
+      zls
     ];
   };
 

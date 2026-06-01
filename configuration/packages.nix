@@ -16,6 +16,7 @@
       lazygit
       valgrind-light
       tmux
+      gh
 
       # GUI utilities
       btop
@@ -70,6 +71,12 @@
       alejandra
       nil
       direnv
+
+      # ASM
+      fasm
+
+      # V
+      vlang
     ];
   };
 

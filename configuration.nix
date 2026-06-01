@@ -9,7 +9,7 @@
   imports = [
     ./hardware-configuration.nix
     ./configuration/net.nix
-    ./configuration/mepasta.nix
+    ./configuration/packages.nix
     ./configuration/input.nix
     ./configuration/audio.nix
   ];
@@ -41,6 +41,10 @@
     # tripwire
     # seems that tripwire is replaced by trippy
     trippy
+
+    # Dependencies
+    pkg-config
+    openssl.dev
   ];
 
   # Do NOT change this value unless you have manually inspected all the changes it would make to your configuration,

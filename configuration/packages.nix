@@ -65,6 +65,7 @@
       tinycc
       unixodbc
       gdb
+      argparse
 
       # Nix/NixOS
       nixd
@@ -84,26 +85,38 @@
       zig-shell-completions
       zig-zlint
       zls
+
+      # Odin
+      odin
+      ols
+
+      # Python
+      python3
+
+      # Font
+      fontforge
     ];
   };
 
-  programs.nix-ld.enable = true;
-  programs.nix-ld.libraries = with pkgs; [
-    stdenv.cc.cc.lib
-    zlib
-    brotli
-    unixodbc
-    glib
-    libc
-    tinycc
-  ];
+  programs = {
+    nix-ld.enable = true;
+    nix-ld.libraries = with pkgs; [
+      stdenv.cc.cc.lib
+      zlib
+      brotli
+      unixodbc
+      glib
+      libc
+      tinycc
+    ];
 
-  programs.firefox.enable = true;
+    firefox.enable = true;
 
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
-    portalPackage = inputs.hyprland.packages.${pkgs.system}.xdg-desktop-portal-hyprland;
+    hyprland = {
+      enable = true;
+      xwayland.enable = true;
+      package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+      portalPackage = inputs.hyprland.packages.${pkgs.system}.xdg-desktop-portal-hyprland;
+    };
   };
 }

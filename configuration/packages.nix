@@ -69,6 +69,7 @@
 
       # QML
       qmplay2-qt6
+      kdePackages.qtdeclarative
 
       # Nix/NixOS
       nixd

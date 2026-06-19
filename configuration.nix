@@ -47,6 +47,11 @@
     openssl.dev
   ];
 
+  qt.enable = true;
+  environment.sessionVariables = {
+    QML2_IMPORT_PATH = "${pkgs.quickshell}/lib/qt-6/qml";
+  };
+
   # Do NOT change this value unless you have manually inspected all the changes it would make to your configuration,
   # and migrated your data accordingly.
   # For more information, see `man configuration.nix` or https://nixos.org/manual/nixos/stable/options#opt-system.stateVersion .

@@ -17,6 +17,7 @@
       valgrind-light
       tmux
       gh
+      jq
 
       # GUI utilities
       btop
@@ -36,7 +37,6 @@
       gnome-themes-extra
       brightnessctl
       fzf
-      kdePackages.qtdeclarative
 
       # Editors & LSP
       vis
@@ -66,6 +66,9 @@
       unixodbc
       gdb
       argparse
+
+      # QML
+      qmplay2-qt6
 
       # Nix/NixOS
       nixd
